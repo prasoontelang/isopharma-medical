@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app version="3.0"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+ 
+   <!-- To save as "hello\WEB-INF\web.xml" -->
+ 
+   <servlet>
+      <servlet-name>HelloWorld</servlet-name>
+      <servlet-class>MyServlet</servlet-class>
+   </servlet>
+ 
+   <servlet-mapping>
+      <servlet-name>HelloWorld</servlet-name>
+      <url-pattern>/say</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>Registration</servlet-name>
+      <servlet-class>Register</servlet-class>
+   </servlet>
+ 
+   <servlet-mapping>
+      <servlet-name>Registration</servlet-name>
+      <url-pattern>/registration</url-pattern>
+   </servlet-mapping>
+
+   <servlet>
+      <servlet-name>signin</servlet-name>
+      <servlet-class>Signin</servlet-class>
+   </servlet>
+ 
+   <servlet-mapping>
+      <servlet-name>signin</servlet-name>
+      <url-pattern>/signin</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>Search</servlet-name>
+      <servlet-class>MedicSearch</servlet-class>
+   </servlet>
+ 
+   <servlet-mapping>
+      <servlet-name>Search</servlet-name>
+      <url-pattern>/medicsearch</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+      <servlet-name>entrydb</servlet-name>
+      <servlet-class>Dbentry</servlet-class>
+   </servlet>
+ 
+   <servlet-mapping>
+      <servlet-name>entrydb</servlet-name>
+      <url-pattern>/dbentry</url-pattern>
+   </servlet-mapping>
+</web-app>

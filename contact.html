@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Isopharma</title>
+<link href="menu_assets/styles.css" rel="stylesheet" type="text/css">
+<style>
+p
+{
+	font-family:georgia;
+	font-size:18px;
+}
+</style>
+</head>
+<body>
+
+	<div class = "logo" align = "left">
+		<a href = ""><img src = "Logo.png" alt = "Logo" style = "float:left;padding:10"/></a>
+	</div>
+	<br />
+	<br />
+	<div id='cssmenu'>
+	<ul>
+		<li><a href="home.html"><span>Home</span></a></li>
+		<li><a href="isop.html"><span>IsoPharma</span></a></li>
+		<li><a href="about.html"><span>About Us</span></a></li>
+		<li class='last active'><a href="contact.html"><span>Contact Us</span></a></li>
+	</ul>
+	</div>
+	<div style = "position:relative;float:left;width:65%;">
+	<br/><br/>
+	<p style = "display:inline;font-family:Georgia;font-size:24px;">CONTACT US</p>
+	<p>Team Cynosure<br/>PESIT<br/>Banashankari 3rd Stage<br/>Bangalore</p>
+	<p><u>Email us</u><br/>Prasoon Telang<br/>prasoontelang@gmail.com</p>
+	<p>Please mail in your suggestions and experiences with the site</p>
+	</div>
+	
+<div style="position:relative;float:right;width:30%;">
+	<div class = "sign align">
+	<p id="signin">Sign In</p>
+	<form action="http://localhost:8080/isopharma/signin" method="GET">
+	<span style = "font-family:Arial;font-weight:bold;">Username</span><br/>
+	<input type = "text" id = "userid" name = "userid" size = "40" style = "font-size:16px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/>
+	<span style = "font-family:Arial;font-weight:bold;">Password</span><br/>
+	<input type = "password" id = "userpwd" name = "userpwd" size = "40" style = "font-size:16px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+	<span style = "float:right;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><input type = "submit" style = "float:right;" class = "but1" value = "Sign in">
+	</form>
+   </div>
+
+   
+   <div class = "register">
+		<em style = "font-family:georgia;"> It is free and Verified </em> <img src = "tick.jpg" alt = "Tick" height = "4%" width ="6%"/>
+		<br/>
+		<span id="new_user" style = "font-family:georgia;"> New User? Register </span>
+		&nbsp; 
+		<button class = "but2" onClick = "location.href='register.html'">SIGN UP</button>
+   </div>
+</div>
+</body>
+</html>

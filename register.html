@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Isopharma Registration</title>
+<link href="menu_assets/styles.css" rel="stylesheet" type="text/css">
+<style>
+	td
+	{
+		font-family:georgia;
+		font-weight:normal;
+		size:12px;
+	}
+</style>
+</head>
+<body>
+
+	<div class = "logo" align = "left">
+		<a href = ""><img src = "Logo.png" alt = "Logo" style = "float:left;padding:10"/></a>
+	</div>
+	<br />
+	<br />
+	<div id='cssmenu'>
+	<ul>
+		<li class = 'active'><a href="home.html"><span>Home</span></a></li>
+		<li><a href="isop.html"><span>IsoPharma</span></a></li>
+		<li><a href="about.html"><span>About Us</span></a></li>
+		<li class='last'><a href="contact.html"><span>Contact Us</span></a></li>
+	</ul>
+	</div>
+
+	<div>
+	    <br />
+		&nbsp;&nbsp;&nbsp;<label style = "font-family:Arial;font-weight:bold;"><u>ISOPHARMA REGISTRATION</u></label>
+		<form action="http://localhost:8080/isopharma/registration" method="POST">
+		<span></span><br/>
+		<table>
+			<tr>
+				<td>Name:</td><td><input type = "text" name = "name"></td>
+			</tr>
+			<tr>
+				<td>Username:</td><td><input type="text" name= "user_name"></td>
+			</tr>
+			<tr>
+				<td>Password:</td><td><input type="password" name= "pass1_name"></td>
+			</tr>
+			<tr>
+				<td>Confirm Password:</td><td><input type="password" name= "pass2_name"></td>
+			</tr>
+			<tr>
+				<td>Age:</td><td><input type="text" name= "age"></td>
+			</tr>
+			<tr>
+				<td>Occupation:</td><td><label><input type="radio" id = "occup" name= "occup" value = "Doctor">Doctor</label>
+									<label><input type="radio" id = "occup" name= "occup" value = "Pharmacist">Pharmacist</label>
+									<label><input type="radio" id = "occup" name= "occup" value = "Other">Other</td></label>
+			</tr>
+			<tr>
+				<td></td><td><center><input type = "submit" style = "position:relative;" value = "Submit"></center></td>
+			</tr>
+		</table>
+		</form>
+	</div>
+</body>
+</html>

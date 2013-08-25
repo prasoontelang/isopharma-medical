@@ -1,0 +1,61 @@
+<html>
+<head>
+	<title>Isopharma</title>
+	<link href="menu_assets/styles.css" rel="stylesheet" type="text/css">
+	<style>
+	#cssmenu
+	{
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+	div
+	{
+		margin-left: 20px;
+	}
+	.entry
+	{
+		background-color:#E8E8E8;
+	}
+	</style>
+</head>
+
+<body>
+	<div class = "logo" align = "left">
+		<a href = ""><img src = "Logo.png" alt = "Logo" style = "float:left;padding:10"/></a>
+	</div>
+	<br />
+	<br />
+	<div id='cssmenu'>
+	<ul>
+		<li class='active'><a href='search.html'><span>Home</span></a></li>
+		<li><a href='isop2.html'><span>IsoPharma</span></a></li>
+		<li><a href='about2.html'><span>About Us</span></a></li>
+		<li class='last'><a href='contact2.html'><span>Contact Us</span></a></li>
+		<li style = "position:relative;float:right;"><span><a href = "home.html">Logout</a></span></li>
+	</ul>
+	</div>
+
+	<br/>
+	<div class = "entry" style = "box-shadow: 2px 2px 2px #888888;">
+	<center>
+	<form action="http://localhost:8080/isopharma/medicsearch" method="GET">
+	<span style = "margin-left:7px;font-size:18px;font-family:georgia;">Enter medicine name</span>
+	<table border=0>
+	    <tr>
+		<center>
+			<td colspan = "2"><input type="text" name = "med_name" id = "med_name" size = "50" style = "font-size:20px;"/><br/></td>
+		</center>
+		</tr>
+		<tr>
+			<td  style = "font-family:Arial;"><center><label title = "This is the common name of the medicine"><input type = "radio" name = "name_type" title = "This is the common name of the medicine" id = "name_type" value = "brand_name" size = "30px" checked = "checked"/>Brand name</label></center></td>
+			<td style = "font-family:Arial;"><center><label title = "This is the scientific name of the medicine"><input type = "radio" name = "name_type" title = "This is the scientific name of the medicine" id = "name_type" value = "medical_name" size = "30px"/>Medical name</label></center></td>
+		</tr>
+		<tr>
+		<td colspan = "2"><input type = "submit"  value = "Search" style = "float:right"></td>
+		</tr>
+	</table>
+	</form>
+	<center>
+	</div>
+</body>
+</html>
